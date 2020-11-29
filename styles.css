@@ -1,0 +1,62 @@
+body {
+    margin-top: 20px;
+    background-color: #ccc;
+    background-image: url(sunset-5383040_1280-min.jpg);
+    
+}
+
+h1,h2,p,
+.results {
+    text-align: center;
+    background-color: #ccc;
+    opacity: 0.7;
+}
+p{
+    margin-bottom: 20px;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition:100ms;
+}
+
+.selection:hover {
+    transform:scale(1.8);
+}
+
+.results {
+    /* margin-top: 1rem; */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+} 
+
+.result-score {
+    margin-left: .1rem;
+    font-size:.5rem;
+    color:#333;
+}
+
+.result-selection {
+    opacity: .5;
+    background-color: grey;
+}
+
+.result-selection.winner {
+    opacity:1;
+    font-size:1.5rem;
+    background-color: blue;
+
+}
